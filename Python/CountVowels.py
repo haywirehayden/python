@@ -1,5 +1,5 @@
 
-vowelcount = "Lets see how many vowels are in this sentance"
+vowelcount = input("Enter a word: ")
 
 count = 0
 
@@ -15,4 +15,4 @@ for i in range(len(vowelcount)):
     ):
         count += 1
 
-print("Number of vowels in the given string is: ", count)
+print("Number of vowels is: ", count)
