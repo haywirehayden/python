@@ -32,7 +32,7 @@ def sql_query(sqlvar):
 #    sql_query(i)
 
 
-updaterows = "UPDATE Student SET Course = Computer Science WHERE StudenID = 5"
+updaterows = "UPDATE Student SET Course = Computer Science WHERE StudentID = 5"
 
 sql_query(updaterows)
 
