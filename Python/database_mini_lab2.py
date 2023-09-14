@@ -11,45 +11,25 @@ def sql_query(sqlvar):
 
 # Between example
 
-betweenvar = 'SELECT sales_target FROM dept WHERE sales_target BETWEEN 4.9999 AND 25.0001'
-
-resultvar = sql_query(betweenvar)
-
-for row in resultvar:
-    print(row)
+sqlqueryvar = 'SELECT sales_target FROM dept WHERE sales_target BETWEEN 4.9999 AND 25.0001'
 
 # Like Example
 
-likevar = "SELECT job_title, notes FROM contact WHERE job_title LIKE '%Acc'"
-
-resultvar = sql_query(likevar)
-
-for row in resultvar:
-    print(row)
+sqlqueryvar = "SELECT job_title, notes FROM contact WHERE job_title LIKE '%Acc'"
 
 # Greater than example
 
-greatervar = 'SELECT salary FROM salesperson WHERE salary > 13.0000'
-
-resultvar = sql_query(greatervar)
-
-for row in resultvar:
-    print(row)
+sqlqueryvar = 'SELECT salary FROM salesperson WHERE salary > 13.0000'
 
 # IN example
 
-invar = "SELECT * FROM salesperson WHERE post_code IN ('NULL')"
-
-resultvar = sql_query(invar)
-
-for row in resultvar:
-   print(row)
+sqlqueryvar = "SELECT * FROM salesperson WHERE post_code IN ('NULL')"
 
 # Equal example
 
-equalvar = "SELECT * FROM salesperson WHERE post_code IN ('NULL')"
+sqlqueryvar = "SELECT * FROM salesperson WHERE post_code = 'NULL'"
 
-resultvar = sql_query(equalvar)
+resultvar = sql_query(sqlqueryvar)
 
 for row in resultvar:
    print(row)
