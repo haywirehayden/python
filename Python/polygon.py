@@ -35,12 +35,12 @@ class Square(Shape):
 rectangle = Rectangle(length, width)
 rectanglearea = rectangle.area()
 rectangleperimeter = rectangle.perimeter()
-print("Rectangle Area is: ", rectanglearea)
-print("Rectangle Perimeter is: ", rectangleperimeter)
+print("The area of the rectangle is: ", rectanglearea)
+print("The perimeter of the rectangle is: ", rectangleperimeter)
 
 
 square = Square(length)
 squarearea = square.area()
 squareperimeter = square.perimeter()
-print("Square Area is: ", squarearea)
-print("Square Perimeter is: ", squareperimeter)
+print("The area of the square is: ", squarearea)
+print("The perimeter of the square is: ", squareperimeter)

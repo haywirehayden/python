@@ -11,7 +11,7 @@ def sql_query(sqlvar):
 
 # Between example
 
-sqlqueryvar = 'SELECT sales_target FROM dept WHERE sales_target BETWEEN 4.9999 AND 25.0001'
+#sqlqueryvar = 'SELECT sales_target FROM dept WHERE sales_target BETWEEN 4.9999 AND 25.0001'
 
 # Like Example
 
@@ -23,7 +23,7 @@ sqlqueryvar = 'SELECT salary FROM salesperson WHERE salary > 13.0000'
 
 # IN example
 
-sqlqueryvar = "SELECT * FROM salesperson WHERE post_code IN ('NULL')"
+sqlqueryvar = "SELECT * FROM salesperson WHERE post_code IN 'NULL'"
 
 # Equal example
 

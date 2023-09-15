@@ -1,26 +1,36 @@
-
 class Budget:
 
-    def __init__(self,moneyvalue,balance):
-        self.moneyvalue = moneyvalue
-        self.balance = balance
+    deposit = 100
+    withdraw = 30
 
-    def depositmoney(self,amount):
-        self.balance += amount
-        return "You have deposited the amount of: " + self.moneyvalue 
+    def __init__(self,deposit,withdraw):
+        self.deposit = deposit
+        self.withdraw = withdraw
 
-    def withdrawmoney(self,amount):
-        self.balance += amount
-        return "You have withdrawn the amount of: " + self.moneyvalue
+    def deposit(self,amount):
+        return self.deposit
 
-    def transfermoney(self,amount):
-        self.balance += amount
-        return "You have withdrawn the amount of: " + self.balance
+    def withdraw(self,amount):
+        return self.withdraw
+
+    def transfer(self,amount):
+        return self.transfer
   
-food = Budget("Food", 400)
-clothing = Budget("clothing", 50)
-entertainment = Budget("entertainment", 75)
+food = Budget("Food", 400, 50)
+clothing = Budget("clothing", 50, 10)
+entertainment = Budget("entertainment", 75, 25)
 
-print(food.moneyvalue, food.balance)
-print(clothing.moneyvalue, clothing.balance)
-print(entertainment.moneyvalue, entertainment.balance)
+print(food.money,food.balance)
+print(clothing.money,clothing.balance)
+print(entertainment.money,entertainment.balance)
+
+
+
+
+
+
+"""
+Goal: “Create a Budget class that can instantiate objects based on different budget categories like food, clothing, 
+and entertainment. These objects should allow for depositing and withdrawing funds from each category, as well 
+computing category balances and transferring balance amounts between categories”
+"""

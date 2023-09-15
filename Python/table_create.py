@@ -32,7 +32,28 @@ def sql_query(sqlvar):
 #    sql_query(i)
 
 
-updaterows = "UPDATE Student SET Course = Computer Science WHERE StudentID = 5"
+
+# work in progress
+
+student_list = []
+
+with open('Student.csv') as student_file:
+    student_data = student_file.readlines()
+    student_file.close()
+    print(student_data)
+
+    for line in student_data:
+        students = line.split(",")
+        print(students)
+        student_list.append(students)
+
+    for students in student_list:
+        sqlquery = "INSERT INTO Student (StudentID, FirstName, Surname ,Course, City) VALUES ("+,student_list[0][0]"+, ",student_list[0][1]",",student_list[0][2]",",student_list[0][3]",",student_list[0][4]", ")
+        print(sqlquery)
+
+
+updaterows = "UPDATE Student SET Course = 'Computer Science' WHERE StudentID = 5"
 
 sql_query(updaterows)
+
 

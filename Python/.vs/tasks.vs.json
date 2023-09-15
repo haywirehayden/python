@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Squares",
+      "appliesTo": "Squares.py",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-Investments",
+      "appliesTo": "Investments.py",
+      "type": "launch"
+    }
+  ]
+}
