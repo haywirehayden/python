@@ -13,11 +13,13 @@ average = round(sum(grades) / len(grades), 2)
 mean = round(statistics.mean(grades), 2)
 median = round(statistics.median(grades), 2)
 
-result = # incomplete
-
 print(minvalue)
 print(maxvalue)
 print("The average of grades is ", average)
+print("The mean of grades is ", mean)
+print("The median of grades is ", median)
+
+
 
 
 
